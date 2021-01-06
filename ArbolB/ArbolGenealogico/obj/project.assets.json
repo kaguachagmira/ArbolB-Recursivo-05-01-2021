@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolGenealogico\\ArbolGenealogico.csproj",
+      "projectUniqueName": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolGenealogico\\ArbolGenealogico.csproj",
       "projectName": "ArbolGenealogico",
-      "projectPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolGenealogico\\ArbolGenealogico.csproj",
+      "projectPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolGenealogico\\ArbolGenealogico.csproj",
       "packagesPath": "C:\\Users\\Kevin111\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolGenealogico\\obj\\",
+      "outputPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolGenealogico\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -58,8 +58,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolB\\ArbolB.csproj": {
-              "projectPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolB\\ArbolB.csproj"
+            "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolB\\ArbolB.csproj": {
+              "projectPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolB\\ArbolB.csproj"
             }
           }
         }

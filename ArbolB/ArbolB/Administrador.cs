@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ArbolB
@@ -16,13 +17,29 @@ namespace ArbolB
             RecorrerArbol(nodo.Izquierdo);
             RecorrerArbol(nodo.Derecho);
         }
-        public int Operador(Nodo nodo)
+        public bool EsNumero(string nombre)
         {
-            if(nodo.Derecho.Nombre !="+" || nodo.Derecho.Nombre !="-" )
-                return int.Parse(nodo.Derecho.Nombre);
-            
-            int operacion =  int.Parse(nodo.Izquierdo.Nombre)+ int.Parse(nodo.Derecho.Nombre);
-            Operador(new Nodo(operacion.ToString()));
+            if (nombre != "+") 
+                return true;
+            else
+                return false;
+        }
+        public int ConvertirEnNumero(string numero)
+        {
+            return int.Parse(numero);
+        }
+        
+        public int SumarArbol(Nodo nodo)
+        {
+            if(!EsNumero(nodo.Nombre) || nodo==null){
+                int izquierdo = SumarArbol(nodo.Derecho);
+                int derecho = SumarArbol(nodo.Izquierdo);
+                return (izquierdo + derecho);
+            }
+            else
+            {
+                return (ConvertirEnNumero(nodo.Nombre));
+            }
         }
     }
 }

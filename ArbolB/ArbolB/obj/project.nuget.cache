@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aYLFUZnw+MKhSyTW7wAiMrF2N8J3N8rXsCLyh/sENxm7zfcNJCEE4B55EfYBb6iG2rvwQ2tQKG/h5ytsYCKJqg==",
+  "dgSpecHash": "uCvmk4xhTDudUH8QXJoUsuRnXtgyiy61ildsyd+tzdVQCKsCl6kbkLaKp6ohOrj+IHLH437ZFyahmA7afBq1Aw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolB\\ArbolB.csproj",
+  "projectFilePath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolB\\ArbolB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevin111\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Kevin111\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

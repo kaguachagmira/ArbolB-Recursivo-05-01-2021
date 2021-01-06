@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolB\\ArbolB.csproj",
+      "projectUniqueName": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolB\\ArbolB.csproj",
       "projectName": "ArbolB",
-      "projectPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolB\\ArbolB.csproj",
+      "projectPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolB\\ArbolB.csproj",
       "packagesPath": "C:\\Users\\Kevin111\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolB\\obj\\",
+      "outputPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

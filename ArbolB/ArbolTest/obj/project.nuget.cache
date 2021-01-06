@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aYxeFwoSHmAK3M2h2zcPVsA+pGTtYWjWPiIpsYqVcQlPNX4BDAHAXlXTWZ88tW1SfbVhKRp4Jx0/lvkiKrIaLQ==",
+  "dgSpecHash": "tWYfyXU35NAjXGWk0BlPwyl+txbQHVkQwjqfuSHyKjm2jiR8kat32meidH7Uu+NgbRA+DWf9IV1crnh3Yob51Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolTest\\ArbolTest.csproj",
+  "projectFilePath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolTest\\ArbolTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kevin111\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\Kevin111\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",

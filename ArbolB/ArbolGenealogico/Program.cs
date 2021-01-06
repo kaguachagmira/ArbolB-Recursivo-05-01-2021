@@ -31,7 +31,7 @@ namespace ArbolGenealogico
                     new Nodo("11",
                         new Nodo("110"),
                         new Nodo("111"))));
-            //raiz.Nombre = "*";
+            /*raiz.Nombre = "*";
 
             //Nodo nivel 1
             var nodo0 = new Nodo();
@@ -89,10 +89,20 @@ namespace ArbolGenealogico
             nodo10.Derecho = nodo101;
 
             nodo11.Izquierdo = nodo110;
-            nodo11.Derecho = nodo111;
+            nodo11.Derecho = nodo111;*/
 
             Administrador  admin = new Administrador();
             admin.RecorrerArbol(raiz);
+
+            var arbolOperaciones = new Nodo("+", 
+                new Nodo("5"), 
+                new Nodo("+", 
+                    new Nodo("6"), 
+                    new Nodo("+", 
+                        new Nodo("-2"), 
+                            new Nodo("-1"))));
+            Console.WriteLine(admin.SumarArbol(arbolOperaciones));
+
         }
     }
 }

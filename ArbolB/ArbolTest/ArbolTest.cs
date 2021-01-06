@@ -6,6 +6,9 @@ namespace ArbolTest
     public class ArbolTest
     {
         [TestMethod]
-S
+        public void nada()
+        {
+
+        }
     }
 }

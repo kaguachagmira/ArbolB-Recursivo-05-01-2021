@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolTest\\ArbolTest.csproj": {}
+    "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolTest\\ArbolTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolTest\\ArbolTest.csproj": {
+    "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolTest\\ArbolTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolTest\\ArbolTest.csproj",
+        "projectUniqueName": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolTest\\ArbolTest.csproj",
         "projectName": "ArbolTest",
-        "projectPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolTest\\ArbolTest.csproj",
+        "projectPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolTest\\ArbolTest.csproj",
         "packagesPath": "C:\\Users\\Kevin111\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Programacion Visual\\ArbolB\\ArbolTest\\obj\\",
+        "outputPath": "C:\\Users\\Kevin111\\Documents\\Tercero\\Repositorios\\ArbolB-Recursivo-05-01-2021\\ArbolB\\ArbolTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
