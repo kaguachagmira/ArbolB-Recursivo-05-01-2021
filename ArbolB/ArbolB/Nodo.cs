@@ -20,11 +20,7 @@ namespace ArbolB
             Derecho = derecho;
         }
         public string Nombre { get; set; }
-       // public List<Nodo> Hijos { get; set }
         public Nodo Izquierdo { get; set; }
         public Nodo Derecho { get; set; }
     }
-    //metodo imprimir recursivo
-    //AdministradorNodo  an = new AdministradorNodo();
-    //an.Imprimir(raiz);
 }

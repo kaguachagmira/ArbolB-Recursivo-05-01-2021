@@ -78,32 +78,5 @@ namespace ArbolB
                 return (ConvertirEnNumero(nodo.Nombre));
             }
         }
-        public int ContadorNodos(Nodo nodo,int contador)
-        {
-            if (nodo == null)
-                return 0;
-            else
-            {
-                Console.WriteLine(nodo.Nombre);
-                contador += 1;
-                ContadorNodos(nodo.Izquierdo, contador);
-                ContadorNodos(nodo.Derecho, contador);
-                return contador;
-            }
-
-        }
-        public int ContadorHojas(Nodo nodo)
-        {
-
-            return 0;
-        }
-        public int ContadorNiveles(Nodo nodo)
-        {
-
-            return 0;
-        }
-        //Cuantos nodos hay
-        //Cuantas hojas hay
-        //Cuantos niveles hay
     }
 }

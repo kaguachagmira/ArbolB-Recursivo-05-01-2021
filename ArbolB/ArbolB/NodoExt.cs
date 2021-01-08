@@ -7,13 +7,19 @@ namespace ArbolB
 {
     public class NodoExt
     {
-
+        public string Nombre { get; set; }
+        public NodoExt(string nombre)
+        {
+            Nombre = nombre;
+            Hijos = new List<NodoExt>();
+        }
         public NodoExt()
         {
 
         }
         public object Contenido { get; set; }
         public List<NodoExt> Hijos { get; set; }
+
         public static int ContarNodos(NodoExt nodo)
         {
             if (nodo == null)
@@ -32,6 +38,33 @@ namespace ArbolB
         public void PonerValor(object obj)
         {
             this.Contenido = obj;
+        }
+        public static int ContarHojas(NodoExt nodo)
+        {
+            if (nodo.Hijos.Count()==0)
+                return 1;
+            int numeroHojas = 0;
+            for(int iterador = 0; iterador < nodo.Hijos.Count(); iterador++)
+            {
+                numeroHojas += ContarHojas(nodo.Hijos[iterador]);
+            }
+            return numeroHojas;
+        }
+        public static int ContarNiveles(NodoExt nodo)
+        {
+            if (nodo.Hijos.Count() == 0)
+                return 0;
+
+            int niveles = 0;
+            for (int iterador = 0; iterador < nodo.Hijos.Count(); iterador++)
+            {
+                if (nodo.Hijos.Count()>0)
+                {
+                    niveles = ContarHojas(nodo.Hijos[iterador]);
+                    niveles++;
+                }
+            }
+            return niveles;
         }
 
     }

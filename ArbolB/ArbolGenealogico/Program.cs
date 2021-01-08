@@ -45,8 +45,6 @@ namespace ArbolGenealogico
             admin.CrearArbol(nodoOperacion, "5+6+2+1");
             admin.RecorrerArbol(nodoOperacion);
             //Console.WriteLine(admin.SumarArbol(nodoOperacion));
-            int contador = 0;
-            Console.WriteLine("El número de nodos es: "+ admin.ContadorNodos(arbolOperaciones, contador));
 
         }
     }
