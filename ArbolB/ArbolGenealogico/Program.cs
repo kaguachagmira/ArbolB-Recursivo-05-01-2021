@@ -14,9 +14,9 @@ namespace ArbolGenealogico
                 Console.Clear();
                 Console.WriteLine("**************************");
                 Console.WriteLine("*    Kevin Guachagmira   *");
-                Console.WriteLine("*       09/12/2020       *");
+                Console.WriteLine("*       05/01/2021       *");
                 Console.WriteLine("*                        *");
-                Console.WriteLine("*    AARBOLES    EN C#   *");
+                Console.WriteLine("*     ARBOLES    EN C#   *");
                 Console.WriteLine("*                        *");
                 Console.WriteLine("**************************");
                 Console.WriteLine("(1) Arbol Binario");
@@ -289,7 +289,7 @@ namespace ArbolGenealogico
                     new Nodo("+",
                         new Nodo("-2"),
                             new Nodo("-1"))));
-            Console.WriteLine("La suma del arbol es: " + admin.SumarArbol(arbolOperaciones));
+            Console.WriteLine("LA SUMA DEL ARBOL ES: " + admin.SumarArbol(arbolOperaciones));
             Console.WriteLine("\n");
 
             //Crear arbol apartir de un string
