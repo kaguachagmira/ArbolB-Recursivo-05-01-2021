@@ -78,5 +78,15 @@ namespace ArbolB
                 return (ConvertirEnNumero(nodo.Nombre));
             }
         }
+        public void NavegarHorizontal(Nodo nodo)
+        {
+            if(nodo == null)
+            {
+                return; 
+            }
+            NavegarHorizontal(nodo.Derecho);
+            NavegarHorizontal(nodo.Izquierdo);
+            Console.WriteLine(nodo.Nombre);
+        }
     }
 }

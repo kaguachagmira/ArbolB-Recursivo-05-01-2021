@@ -66,6 +66,18 @@ namespace ArbolB
             }
             return niveles;
         }
+        public static void ImprmirArbolMultiplesHijos(NodoExt nodo)
+        {
+            Console.WriteLine(nodo.Nombre);
+            if (nodo == null)
+                Console.WriteLine("El arbol que deseas imprimir no ha sido creado correctamente");
+            if (nodo.Hijos == null)
+                Console.WriteLine(nodo.Nombre);
+            for (int i = 0; i < nodo.Hijos.Count(); i++)
+            {
+                ImprmirArbolMultiplesHijos(nodo.Hijos[i]);
+            }
+        }
 
     }
 }
