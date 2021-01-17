@@ -28,62 +28,61 @@ namespace ArbolGenealogico
                 Console.WriteLine("(7) Expresión matemática con +-*/");
                 Console.WriteLine("(8) Salir");
                 Console.WriteLine("Seleccione una opción del menú: ");
-                opcion = int.Parse(Console.ReadLine());
+                try
+                {
+                    opcion = int.Parse(Console.ReadLine());
+
+                }
+                catch
+                {
+                    Console.WriteLine("Opcion de menu invalida");
+                }
                 Console.Clear();
                 switch (opcion)
                 {
                     case 1:
                         Console.WriteLine("Elegiste contruir Arbol binario");
                         Program.construirArbolB();
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         break;
                     case 2:
                         Console.WriteLine("Elegiste contruir Arbol multiples Hijos");
                         Program.construirArbolMultiplesHijos();
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         break;
                     case 3:
                         Console.WriteLine("Elegiste contar niveles Arbol Mutiples Hijos");
                         Program.contarNiveles();
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         break;
                     case 4:
                         Console.WriteLine("Elegiste contar hoijas Arbol Mutiples Hijos");
                         Program.contarHojas();
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         break;
                     case 5:
                         Console.WriteLine("Elegiste contar nodos Arbol Mutiples Hijos");
                         Program.contarNodos();
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         break;
                     case 6:
                         Console.WriteLine("Elegiste navegación horizontal POSTORDEN");
                         Program.NavegarHorizontalmente();
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         break;
                     case 7:
                         Console.WriteLine("Elegiste operar mediante expresión matematica");
                         Program.OperarExpresion();
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         break;
                     case 8:
                         Console.WriteLine("Muchas gracias por usar este programita");
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         opcion = 8;
                         break;
                     default:
                         Console.WriteLine("La opción escogida no esta dentro del menú vuelve a digitarlo porfavor");
-                        Console.WriteLine("Presiona una tecla para continuar");
-                        Console.ReadLine();
+                        Program.PresionarSalir();
                         break;
                 }
             } while (opcion != 8);
@@ -281,22 +280,69 @@ namespace ArbolGenealogico
 
             Administrador admin = new Administrador();
 
+            //Ejemplo 1
             //Crear arbol manual 
-            var arbolOperaciones = new Nodo("+",
+            var arbolOperaciones = new Nodo("*",
+                new Nodo("5"),
+                new Nodo("*",
+                    new Nodo("6"),
+                    new Nodo("*",
+                        new Nodo("-2"),
+                            new Nodo("-1"))));
+            //Operar arbol apartir del arbol creado
+            Console.WriteLine("LA OPERACION QUE SE REALIZO MEDIANTE EL ARBOL ES: " + admin.SumarArbol(arbolOperaciones));
+            Console.WriteLine("\n");
+
+
+            //Ejemplo 2
+            //Crear arbol manual 
+            var arbolOperaciones2 = new Nodo("-",
+                new Nodo("5"),
+                new Nodo("-",
+                    new Nodo("6"),
+                    new Nodo("*",
+                        new Nodo("-2"),
+                            new Nodo("-1"))));
+            //Operar arbol apartir del arbol creado
+            Console.WriteLine("LA OPERACION QUE SE REALIZO MEDIANTE EL ARBOL ES: " + admin.SumarArbol(arbolOperaciones2));
+            Console.WriteLine("\n");
+
+            //Ejemplo 3
+            //Crear arbol manual 
+            var arbolOperaciones3 = new Nodo("/",
+                new Nodo("5"),
+                new Nodo("/",
+                    new Nodo("6"),
+                    new Nodo("-",
+                        new Nodo("-2"),
+                            new Nodo("-1"))));
+            //Operar arbol apartir del arbol creado
+            Console.WriteLine("LA OPERACION QUE SE REALIZO MEDIANTE EL ARBOL ES: " + admin.SumarArbol(arbolOperaciones3));
+            Console.WriteLine("\n");
+
+            //Ejemplo 3
+            //Crear arbol manual 
+            var arbolOperaciones4 = new Nodo("/",
                 new Nodo("5"),
                 new Nodo("+",
                     new Nodo("6"),
-                    new Nodo("+",
+                    new Nodo("*",
                         new Nodo("-2"),
                             new Nodo("-1"))));
-            Console.WriteLine("LA SUMA DEL ARBOL ES: " + admin.SumarArbol(arbolOperaciones));
+            //Operar arbol apartir del arbol creado
+            Console.WriteLine("LA OPERACION QUE SE REALIZO MEDIANTE EL ARBOL ES: " + admin.SumarArbol(arbolOperaciones4));
             Console.WriteLine("\n");
 
             //Crear arbol apartir de un string
-            Nodo nodoOperacion = new Nodo();
-            admin.CrearArbol(nodoOperacion, "5+6+2+1");
-            admin.RecorrerArbol(nodoOperacion);
+            //Nodo nodoOperacion = new Nodo();  
+            //admin.CrearArbol(nodoOperacion, "5+6+2+1");
+            //admin.RecorrerArbol(nodoOperacion);
             //Console.WriteLine(admin.SumarArbol(nodoOperacion));
+        }
+        public static void PresionarSalir()
+        {
+            Console.WriteLine("Presiona una tecla para continuar");
+            Console.ReadLine();
         }
     }
 }

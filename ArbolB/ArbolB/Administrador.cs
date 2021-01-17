@@ -56,22 +56,35 @@ namespace ArbolB
         }
         public bool EsNumero(string nombre)
         {
-            if (nombre != "+") 
+            if (nombre != "+"  && nombre != "-" && nombre != "*" && nombre != "/") 
                 return true;
             else
                 return false;
         }
-        public int ConvertirEnNumero(string numero)
+        public float ConvertirEnNumero(string numero)
         {
-            return int.Parse(numero);
+            return float.Parse(numero);
         }
         
-        public int SumarArbol(Nodo nodo)
+        public float  DeterminarOPeracion(string operacion, float derecho ,float izquierda)
+        {
+            if(operacion=="+")
+                return izquierda + derecho;
+            if (operacion == "-")
+                return izquierda - derecho;
+            if (operacion == "*")
+                return izquierda * derecho;
+            if (operacion == "/")
+                return izquierda / derecho;
+            return 0;
+        }
+        public float  SumarArbol(Nodo nodo)
         {
             if(!EsNumero(nodo.Nombre) || nodo==null){
-                int izquierdo = SumarArbol(nodo.Derecho);
-                int derecho = SumarArbol(nodo.Izquierdo);
-                return (izquierdo + derecho);
+                float izquierdo = SumarArbol(nodo.Izquierdo);
+                float derecho = SumarArbol(nodo.Derecho);
+                float resp = DeterminarOPeracion(nodo.Nombre, derecho, izquierdo);
+                return resp;
             }
             else
             {
